@@ -6,6 +6,6 @@ const InputCOntroller = new inputController();
 
 const inputRouter = express.Router();
 
-inputRouter.get('/getResponse', rateLimitMiddleware, (req, res, next) => InputCOntroller.getResponse(req, res, next));
+inputRouter.post('/getResponse', rateLimitMiddleware, (req, res, next) => InputCOntroller.getResponse(req, res, next));
 
 export default inputRouter;
