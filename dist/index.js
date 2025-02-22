@@ -39,9 +39,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importStar(require("express"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const envConfig_1 = require("./lib/config/envConfig");
+const inputRoutes_1 = __importDefault(require("./lib/routes/inputRoutes"));
 const app = (0, express_1.default)();
 app.use((0, express_1.json)());
 app.use(body_parser_1.default.urlencoded({ extended: true }));
+app.use('/api', inputRoutes_1.default);
 app.listen(envConfig_1.config.PORT, () => {
     console.log(`Server is running on http://localhost:${envConfig_1.config.PORT}`);
 });

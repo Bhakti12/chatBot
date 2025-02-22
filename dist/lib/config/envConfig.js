@@ -37,5 +37,6 @@ exports.config = void 0;
 const dotenv = __importStar(require("dotenv"));
 dotenv.config();
 exports.config = {
-    PORT: process.env.PORT
+    PORT: process.env.PORT,
+    OPENAI_SECRET_KEY: process.env.OPENAI_SECRET_KEY
 };

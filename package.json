@@ -16,7 +16,7 @@
     "express": "^4.21.2",
     "express-rate-limit": "^7.5.0",
     "langchain": "^0.3.19",
-    "openapi": "^1.0.1",
+    "openai": "^4.85.3",
     "redis": "^4.7.0"
   },
   "devDependencies": {
